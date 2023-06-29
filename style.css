@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(144, 169, 167);
+}
+
+header h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-bottom: 0.5px solid rgb(179, 179, 179);
+    padding-bottom: 5px;
+}
+
+.cal {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    max-height: 800px;
+    border: 5px rgb(23, 23, 23) solid;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-top: 50px;
+    padding: 5px;
+}
+
+.cal .input {
+    flex: 30;
+    border: 1px solid;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    
+}
+
+.cal .buttons {
+    flex: 70;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.buttons .raws {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.raws button {
+    box-sizing: border-box;
+    border: 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background-color: rgb(144, 169, 167);
+    width: 25%;
+    padding-top: 0;
+    padding-bottom: 0;
+    aspect-ratio: 1/1;
+    font-size: 20px;
+    
+}
+
