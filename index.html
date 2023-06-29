@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+   
 </head>
 <body>
     <header>
@@ -12,43 +14,46 @@
     </header>
     <div class="cal">
     <div class="input">
-        <p>firstNumber</p>
-        <p>SecondNumber</p>
+        <p id="firstNumber">0</p>
+        <p id="secondNumber">0</p>
+       
     </div>
     <div class="buttons">
         <div class="raws">
-            <button>AC</button>
-            <button>C</button>
-            <button>&larr;</button>
-            <button>%</button>
+            <button onClick="clearAll()">AC</button>
+            <button onClick="clearAll()">C</button>
+            <button onClick="deleteLastCharacter()">&larr;</button>
+            <button onClick="setOperator('%')">%</button>
         </div>
         <div class="raws">
-            <button>9</button>
-            <button>8</button>
-            <button>7</button>
-            <button>&divide;</button>
+            <button  onClick="setNumber(9)">9</button>
+            <button  onClick="setNumber(8)">8</button>
+            <button onClick="setNumber(7)">7</button>
+            <button onClick="setOperator('/')">&divide;</button>
         </div>
         <div class="raws">
-            <button>6</button>
-            <button>5</button>
-            <button>4</button>
-            <button>x</button>
+            <button onClick="setNumber(6)">6</button>
+            <button onClick="setNumber(5)">5</button>
+            <button onClick="setNumber(4)">4</button>
+            <button onClick="setOperator('*')">x</button>
         </div>
         <div class="raws">
-            <button>3</button>
-            <button>2</button>
-            <button>1</button>
-            <button>+</button>
+            <button onClick="setNumber(3)">3</button>
+            <button onClick="setNumber(2)">2</button>
+            <button onClick="setNumber(1)">1</button>
+            <button onClick="setOperator('+')">+</button>
         </div>
         <div class="raws">
-            <button>0</button>
-            <button>.</button>
-            <button>=</button>
-            <button>-</button>
+            <button onClick="setNumber(0)">0</button>
+            <button onClick="setNumber('.')">.</button>
+            <button onClick="performCalculation()">=</button>
+            <button onClick="setOperator('-')">-</button>
             
         </div>
 
     </div>
+   
 </div>
+
 </body>
 </html>
